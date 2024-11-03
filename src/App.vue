@@ -1,26 +1,49 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <v-app>
+    <v-container fluid class="pa-0">
+      <v-row>
+        <!-- Coluna para o Formulário -->
+        <v-col
+          cols="12"
+          md="4"
+          class="pa-0 form-container"
+        >
+          <user-form />
+        </v-col>
+
+        <!-- Coluna para a Tabela -->
+        <v-col
+          cols="12"
+          md="8"
+          class="pa-0 table-container"
+        >
+          <user-table />
+        </v-col>
+      </v-row>
+    </v-container>
+  </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import UserForm from './components/UserForm.vue';
+import UserTable from './components/UserTable.vue';
 
 export default {
-  name: 'App',
   components: {
-    HelloWorld
-  }
-}
+    UserForm,
+    UserTable,
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+<style scoped>
+.form-container {
+  background-color: #01082d;
+  height: 100%;
+  color: white;
+}
+
+.table-container {
+  background-color: white;
 }
 </style>
