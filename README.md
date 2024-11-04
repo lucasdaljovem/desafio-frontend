@@ -2,6 +2,13 @@
 # Desafio Frontend
 
 Este é um projeto frontend desenvolvido com Vue.js que implementa um sistema de cadastro de usuários. O projeto inclui um formulário para cadastrar usuários, com busca automática de endereço através da API ViaCEP, e exibe a lista de usuários cadastrados em uma tabela.
+## Preparação
+
+![Home](https://github.com/user-attachments/assets/545d3454-650e-407d-8c66-07007e4984ef)
+Antes de ser criado o site, foi criado um modelo no canva, para definir melhor a ideia de como gostaria que fosse o projeto final
+
+
+
 
 ## Funcionalidades
 
